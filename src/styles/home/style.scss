@@ -191,6 +191,11 @@ nav {
   .card {
     @include card();
     @include adaptation-flex();
+.card-body {
+    height: 110px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   }
 }
 
