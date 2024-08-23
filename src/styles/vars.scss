@@ -1,0 +1,44 @@
+// Кольори
+$error-color: #be1c1c;
+$primary-color: #658C4A;
+$primary-color-opacity: rgba(101, 140, 74, 0.9);
+$secondary-color: #E7CEC0;
+$background-color-secondary: #FFEFE6;
+$background-color-paper: #f8f9fa;
+$default-color: #fff;
+$text-color: #333333;
+$grey100: #E6E6E6;
+$grey200: #F5F5F5;
+$grey600: #666666;
+
+// Шрифти
+$font-family-heading: 'Libre Baskerville';
+$font-family-body: 'Inter';
+$font-size-base: 1rem;
+$line-height-base: 1.5;
+
+// Відступи
+$spacing-unit: 8px;
+$border-radius: 4px;
+
+// Заголовки
+$h1-size: 3.5rem;
+$h2-size: 3rem;
+$h3-size: 2.5rem;
+$h4-size: 2rem;
+$h5-size: 1.5rem;
+$h6-size: 1.25rem;
+
+// Параграфи
+$p-large-size: 1.25rem;
+$p-normal-size: 1rem;
+$p-small-size: 0.875rem;
+
+
+// Тіні
+$shadow-icon: rgba(50, 50, 93, 0.10) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+$shadow-contect: 0px 4px 6px rgba(0, 0, 0, 0.1);
+$shadow-article: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+// clamp
+$clamp-grid: clamp(2.5rem, -0.777rem + 9.12vw, 6.063rem)

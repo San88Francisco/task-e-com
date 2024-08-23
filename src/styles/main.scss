@@ -1,0 +1,66 @@
+@import 'mixin.scss';
+@import 'reset.scss';
+@import 'vars.scss';
+
+@import 'home/style.scss';
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $text-color;
+  background-color: $background-color-paper;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family-heading;
+}
+
+p {
+  font-family: $font-size-base;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+  font-size: $font-size-base;
+  font-family: $font-family-body;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+button {
+  background-color: $primary-color;
+  color: $background-color-paper;
+  text-transform: capitalize;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: $font-family-body;
+  transition: all 0.1s ease;
+
+  &:hover {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

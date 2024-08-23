@@ -1,0 +1,102 @@
+@mixin form-reset() {
+
+  input,
+  textarea,
+  select,
+  button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+  }
+}
+
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin container($width: 1200px) {
+  width: 100%;
+  max-width: $width;
+  margin: 0 auto;
+  padding: 0 $spacing-unit;
+}
+
+@mixin title() {
+  h2 {
+    font-weight: 700;
+    font-size: 48px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+@mixin card() {
+  width: 18rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  img {
+    box-shadow: rgba(50, 50, 93, 0.05) 0px 13px 27px -5px, rgba(0, 0, 0, 0.2) 0px 8px 16px -8px;
+    border-radius: 10px;
+  }
+
+  .card-body {
+    text-align: start;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h5 {
+      font-family: $font-family-body;
+      font-size: $font-size-base;
+      font-weight: 600;
+    }
+
+    .current-price {
+      font-size: $p-large-size;
+      font-weight: bold;
+      color: $primary-color;
+    }
+
+    .original-price {
+      font-size: $p-normal-size;
+      text-decoration: line-through;
+      color: #888;
+    }
+  }
+}
+
+@mixin margin-border() {
+  margin: 0 20px;
+
+  @media (max-width: 650px) {
+    margin: 0 10px;
+  }
+}
+
+@mixin adaptation-flex() {
+  & {
+    flex: 1 1 calc(25% - 1rem);
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 650px) {
+    & {
+      flex: 1 1 calc(50% - 1rem);
+    }
+  }
+}
